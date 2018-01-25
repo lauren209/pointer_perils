@@ -6,7 +6,7 @@
  * Please note that casting changes nothing value-wise
  * but is simply included to make the compiler happy
  * about printing the memory address.
- */ 
+ */
 
 int allocateMemory2( char** arr){
 	printf("==================== INSIDE OF FUNCTION! ====================\n\n");
@@ -16,7 +16,7 @@ int allocateMemory2( char** arr){
 	printf("AFTER MALLOC!\n");
 	printf("This pointer now points to *arr which olds the memory address (%p).\n\n", (void *)*arr);
 	printf("==================== RETURN FROM FUNCTION ====================\n\n");
-	
+
 	return 0;
 }
 
@@ -27,7 +27,7 @@ int allocateMemory( char* arr){
 	printf("AFTER MALLOC!\n");
 	printf("This pointer now holds the memory address (%p).\n\n", (void *)arr);
 	printf("==================== RETURN FROM FUNCTION ====================\n\n");
-	
+
 	return 0;
 }
 

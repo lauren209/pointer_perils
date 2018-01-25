@@ -9,7 +9,7 @@ void clearScreen(){
 }
 
 int main(int argc, char** argv){
-	
+
 	clearScreen();
 	printf("We will start with an int x.  Its value is 0.\n");
 	printf("We will also declare an int* y.  We will set its value to the address of x.\n\n");
@@ -23,8 +23,8 @@ int main(int argc, char** argv){
 	printf("We issue the statement: \n");
 	printf("*y = 100;\n\n  Now:\n");
 	printf("x = %d.\t\ty = %p.\n\n", x, y);
-	getchar();	
-	printf("Notice that the value of y didn't change.  y was (and still is) the address of x.\n\n");	
+	getchar();
+	printf("Notice that the value of y didn't change.  y was (and still is) the address of x.\n\n");
 	printf("Now let's try something more advanced.\n");
 	getchar();
 	clearScreen();
@@ -43,7 +43,7 @@ int main(int argc, char** argv){
 	printf("We can access the memory as a char array as such:\n\n");
 	buffer[0] = 'h';
 	printf("buffer[0] = '%c'\n\n", buffer[0]);
-	getchar();	
+	getchar();
 	clearScreen();
 	printf("Pointers become VERY useful when we want to pass parameters to\n");
 	printf("functions.  Anything passed in C is passed by value.  This means\n");
@@ -54,7 +54,7 @@ int main(int argc, char** argv){
 	getchar();
 	printf("\n\nSo, we have int x = 0;  We are going to pass it to a function\n");
 	printf("addToX(int x).  This function will add 1024 to x.");
-	printf("\n\nBefore the function: x = %d\n", x);	
+	printf("\n\nBefore the function: x = %d\n", x);
 	getchar();
 	addToX(x);
 	printf("\n\nAfter the function call: x = %d\n", x);
@@ -95,5 +95,5 @@ int main(int argc, char** argv){
 	printf("Address of buffer = %p.\n", &buffer);
 	printf("Value of buffer = %p.\n", buffer);
 	getchar();
-		
+
 }
